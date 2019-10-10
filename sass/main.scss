@@ -1,13 +1,43 @@
 // sass --watch sass:public/css --style compressed
 @charset "UTF-8";
 @import "_vars";
+@import "_main_nav";
+@import "_footer";
+@import "_hero";
+@import "_what";
+@import "_why";
 
-main {
-    width: 90%;
-    text-align: center;
-    margin: 0 auto;
+html {
+    scroll-behavior: smooth;
 }
 
-div {
-    background: skyblue;
+img {
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    @include h1-class;
+}
+
+h2 {
+    @include h2-class;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.main-con {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    // background: gold;
+    // text-align: center;
 }

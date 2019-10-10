@@ -1,0 +1,72 @@
+.why {
+    background-color: $pink;
+    padding: $mobile-margin;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p {
+        @include p-class;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+    img {
+        margin-bottom: 20px;
+    }
+}
+
+.uses, .materials {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+
+.uses {
+    margin: $mobile-margin 0px;
+}
+
+@media screen and (min-width: $tablet-size) {
+    .why {
+        padding: $tablet-margin;
+        img {
+            margin: 0px;
+        }
+    }
+
+    .uses {
+        margin: $tablet-margin 0px;
+    }
+    
+}
+
+
+@media screen and (min-width: $desktop-size) {
+    .why {
+        padding: $desktop-margin;
+    }
+    .uses {
+        flex-direction: row;
+        justify-content: space-around;
+        margin: $desktop-margin 0px;
+        p {
+            width: 50%;
+        }
+        img {
+            width: 50%;
+            margin-right: 50px;
+        }
+    }
+    
+    .materials {
+        flex-direction: row-reverse; 
+        justify-content: space-around; 
+        p {
+            width: 50%;
+        }
+        img {
+            width: 50%;
+            margin-left: 50px;
+        }
+    }
+}
