@@ -1,0 +1,56 @@
+.what {
+    background-color: #1a94a1;
+    text-align: center;
+    padding: $mobile-margin;
+    p {
+        @include p-class;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+}
+
+.video-con {
+    padding: $mobile-margin 0px;
+    margin: 0 auto;
+    flex: 0;
+    max-width: 1080px;
+}
+
+.embed-container { 
+    position: relative; 
+    padding-bottom: 56.25%; 
+    height: 0; 
+    overflow: hidden; 
+    max-width: 100%; 
+} 
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+}
+
+@media screen and (min-width: $tablet-size) {
+    .what {
+        padding: $tablet-margin;
+        p {
+            text-align: center;
+        }
+    }
+    .video-con {
+        padding: $tablet-margin 0px;
+    }
+}
+
+@media screen and (min-width: $desktop-size) {
+    .what {
+        padding: $desktop-margin;
+    }
+
+    .video-con {
+        padding: $desktop-margin 0px;
+    }
+}

@@ -1,23 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<!-- sets site size to equal the device width -->
+    <meta charset="UTF-8">
+    <!-- sets site size to equal the device width -->
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<!-- reset before main css (reset, then rewrite) -->
-	<link href="css/reset.css" rel="stylesheet" type="text/css">
+    <!-- reset before main css (reset, then rewrite) -->
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans:700&display=swap" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet" type="text/css">
-    
-    <title>Responsive Web Template</title>
-</head>
 
+    <title>Thneed | The Lorax</title>
+</head>
 <body>
-    <main>
-        <h1>You can do it!</h1>
-        <img src="images/smiley.jpeg" alt="smile!">
-    </main>
-        
-	<script src="js/main.js"></script>
+    <h1 class="hidden">Thneed Home</h1>
+    <div class="nav-positioning">
+        <div class="main-nav-con">
+            <a class="logo" href="/"><img src="images/logo.svg" alt="logo"/></a>
+            <div class="hamburger-nav-con">
+                <i class="fa fa-bars hamburger"></i>
+                <nav class="main-nav">
+                    <h2 class="hidden">Main Navigation</h2>
+                    <ul>
+                        <a href="#"><li>Shop</li></a>
+                        <a href="#"><li>Pricing</li></a>
+                        <a href="#"><li>Tour</li></a>
+                        <a href="#"><li>Contact</li></a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="main-con">
+        <section class="hero">
+            <div class="hero-desc-btn-con">
+                <h1>The Thneed</h1>
+                <p>A fine thing that all people need.</p>
+                <div class="btn-con">
+                    <a href="#">Get It Now</a>
+                </div>
+            </div>
+        </section>
+        <section class="what">
+            <h2>What Is the Thneed?</h2>
+            <p>The Thneed is a highly versatile object knitted from the foliage of a Truffula Tree. In the words of its founder, the Thneed is "a revolutionary product that will change the world as we know it!"</p>
+            <div class="video-con">
+                <div class='embed-container'>
+                    <iframe src='https://www.youtube.com/embed/PQk3hZwN9fo?start=127' frameborder='0' allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+        <section class="why">
+            <h2>Why Do You Thneed It?</h2>
+            <section class="uses">
+                <h3 class="hidden">Uses</h3>
+                <img src="images/hat.jpg" alt="Thneed Hat">
+                <p>It has a million uses! Use it as a trendy hat, a tight-rope for an acrobat, a net for catching butterflies, or for exercise. It can also be used as a cleaner, or a swimsuit. The possibilities are endless. </p>
+            </section>
+            <section class="materials">
+                <h3 class="hidden">Materials</h3>
+                <img src="images/truffulas.jpg" alt="Truffula Trees">
+                <p>Our fine Thneeds are made from <em>real</em> Truffula trees. Thanks to its all natural microfibres, the Thneed is suuuuuuper absorbant! And it comes in assorted warm colours.</p>
+            </section>
+        </section>
+    </div>
+    <footer>
+        <h2>Buy one today.</h2>
+        <p>Totally does not kill the Truffula Forest. Probably.</p>
+        <div class="btn-con">
+            <a href="#">Buy a Thneed</a>
+        </div>
+        <hr>
+        <p>© The Once-ler 2019. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/main_nav.js"></script>
+
 </body>
 </html>
